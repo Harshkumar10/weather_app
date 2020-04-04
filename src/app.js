@@ -4,6 +4,7 @@ const hbs = require('hbs');
 //console.log(__dirname);
 //console.log(path.join(__dirname,'../public'));
 const app = express();
+const port=process.env.PORT||3000
 const publicDirectoryPath=path.join(__dirname,'../public');
 //customize the name of view->templates
 const viewPath = path.join(__dirname,'../templates/views');
@@ -124,6 +125,6 @@ app.get('*',(req,res)=>{
         errorMessage:'Page not found'
     })
 })
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000');
+app.listen(port,()=>{
+    console.log('Server is up on port '+port);
 });
