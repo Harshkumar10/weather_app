@@ -1,4 +1,4 @@
-console.log('cilent site is loaded');
+
 //client side java script
 //fetch is browser property
 
