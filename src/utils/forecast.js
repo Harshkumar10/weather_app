@@ -10,7 +10,7 @@ const forecast = (lat,long,callback)=>{
             callback('not valid',undefined);
         }
         else{
-            callback(undefined,"There is "+response.body.weather[0].description+'. It is currently '+response.body.main.temp+" degree celcius. There is "+response.body.main.humidity+"% humidity.");
+            callback(undefined,"There is "+response.body.weather[0].description+'. It is currently '+response.body.main.temp+" degree celcius.  There is "+response.body.main.humidity+"% humidity.");
         }
     }) 
 }
