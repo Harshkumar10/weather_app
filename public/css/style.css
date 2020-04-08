@@ -1,6 +1,7 @@
 body{
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(17, 3, 3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
@@ -13,9 +14,9 @@ body{
 }
 
 footer{
-    background-color:rgba(221, 208, 208, 0.308);
+    background-color:rgba(146, 45, 45, 0.308);
     color: gray;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #d63d3d;
     margin-top: 16px;
     padding: 16px 0;
 }
@@ -23,12 +24,19 @@ footer{
 header{
     margin-top:16px;
     margin-bottom: 49px;
+    background-color: rgb(211, 166, 106);
 }
 h1{
     font-size: 62px;
     margin-bottom: 16px;
 }
 
+.para-1{
+    color: blueviolet;
+}
+.para-2{
+    color: cadetblue;
+}
 header a{
     color: #888888;
     margin-right:16px ;
