@@ -22,7 +22,7 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 
 //res.render is used to get .hbs file
-//hbs is used for dynamic erb page
+//hbs is used for dynamic web page
 app.get('',(req,res)=>{
    // res.render('index');
     //automaticallicay calls index.hbs 
@@ -31,27 +31,6 @@ app.get('',(req,res)=>{
         name:'Harsh kumar'
     })
 })
-//localhost:3000
-// app.get('',(req,res)=>{
-//     res.send('<h1>weather App</h1>');
-//     //this is very tedies job to write lin by line
-// })
-
-//display this on 
-//localhost:3000/help
-//json of array passin
-// app.get('/help',(req,res)=>{
-//     res.send([{
-//         name:'harsh',
-//         age:20
-//     },
-// {
-//     name:'kumat',
-//     age:36
-// }]);
-// });
-
-
 
 app.get('/about',(req,res)=>{
     //res.send('this is project about waetther app');
@@ -101,11 +80,11 @@ app.get('/products',(req,res)=>{
     if(!req.query.search)
     {
         return res.send({
-            error:'you must provide seacj'
+            error:'you must provide search'
             
         })
     }
-    console.log(req.query.search)
+    //console.log(req.query.search)
     res.send({
         products:[]
     })
